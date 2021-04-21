@@ -132,7 +132,7 @@ class OneSignalClient
         return $this;
     }
 
-    public function sendNotificationToUser($message, $userId, $url = null, $data = null, $buttons = null, $schedule = null, $headings = null, $subtitle = null) {
+    public function sendNotificationToUser($message, $userId, $url = null, $image = null, $data = null, $buttons = null, $schedule = null, $headings = null, $subtitle = null) {
         $contents = array(
             "en" => $message
         );
@@ -145,6 +145,14 @@ class OneSignalClient
 
         if (isset($url)) {
             $params['url'] = $url;
+        }
+        
+        if (isset($image)) {
+            $params['big_picture'] = $image;
+            $params['huawei_big_picture'] = $image;
+            $params['chrome_web_image'] = $image;
+            $params['adm_big_picture'] = $image;
+            $params['chrome_big_picture'] = $image;
         }
 
         if (isset($data)) {
