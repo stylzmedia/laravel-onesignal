@@ -1,6 +1,6 @@
 <?php
 
-namespace Berkayk\OneSignal;
+namespace StylzMedia\OneSignal;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;

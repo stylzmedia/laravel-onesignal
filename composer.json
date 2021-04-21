@@ -14,16 +14,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Berkayk\\OneSignal\\": "src/"
+      "StylzMedia\\OneSignal\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Berkayk\\OneSignal\\OneSignalServiceProvider"
+        "StylzMedia\\OneSignal\\OneSignalServiceProvider"
       ],
       "aliases": {
-        "OneSignal": "Berkayk\\OneSignal\\OneSignalFacade"
+        "OneSignal": "StylzMedia\\OneSignal\\OneSignalFacade"
       }
     }
   },
